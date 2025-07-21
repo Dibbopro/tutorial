@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NeonBans Docs</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="container">
+  <div class="layout">
     <aside class="sidebar">
-      <h1>NeonBans</h1>
-      <nav>
+      <div class="logo">NeonBans</div>
+      <nav class="nav">
         <a href="#features">✨ Features</a>
         <a href="#installation">📥 Installation</a>
         <a href="#commands">📜 Commands</a>
@@ -20,25 +20,26 @@
         <a href="#webhook">📬 Webhook</a>
       </nav>
     </aside>
-    <main>
+
+    <main class="content">
       <section id="features">
         <h2>✨ Features</h2>
         <ul>
           <li>Ban, Kick, Mute, Warn, Tempban, Tempmute</li>
-          <li>Webhook support for Discord</li>
-          <li>Local SQLite storage</li>
-          <li>Configurable punishment messages</li>
-          <li>Auto-warning punishment thresholds</li>
+          <li>Discord webhook integration</li>
+          <li>SQLite local storage</li>
+          <li>Custom punishment messages</li>
+          <li>Auto-warning thresholds</li>
         </ul>
       </section>
 
       <section id="installation">
         <h2>📥 Installation</h2>
         <ol>
-          <li>Download the plugin from GitHub</li>
-          <li>Place <code>NeonBans.jar</code> into your <code>/plugins</code> folder</li>
+          <li>Download from GitHub</li>
+          <li>Place <code>NeonBans.jar</code> in your <code>/plugins</code> folder</li>
           <li>Restart your Minecraft server</li>
-          <li>Edit the <code>config.yml</code> to your preferences</li>
+          <li>Edit the <code>config.yml</code> as needed</li>
         </ol>
       </section>
 
@@ -58,7 +59,7 @@
 
       <section id="config">
         <h2>⚙️ Example Config</h2>
-        <pre><code># NeonBans configuration
+<pre><code># NeonBans configuration
 
 broadcast-ban-messages: true
 ban-message: "&cYou are banned from this server! Reason: %reason%"
@@ -72,12 +73,12 @@ messages:
     🚫 **Ban Issued**
     **Player:** %player%
     **Reason:** %reason%
-        </code></pre>
+</code></pre>
       </section>
 
       <section id="permissions">
         <h2>🔑 Permissions</h2>
-        <pre><code>
+<pre><code>
 neonbans.ban       - Use /ban
 neonbans.kick      - Use /kick
 neonbans.mute      - Use /mute
@@ -85,12 +86,12 @@ neonbans.warn      - Use /warn
 neonbans.tempban   - Use /tempban
 neonbans.tempmute  - Use /tempmute
 neonbans.admin     - All permissions
-        </code></pre>
+</code></pre>
       </section>
 
       <section id="webhook">
         <h2>📬 Webhook Preview</h2>
-        <img src="https://i.imgur.com/webhook-placeholder.png" alt="Webhook Preview" class="webhook-img" />
+        <img src="https://i.imgur.com/webhook-placeholder.png" alt="Webhook Example" class="webhook-img">
       </section>
 
       <footer>
