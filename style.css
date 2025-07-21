@@ -1,83 +1,82 @@
+/* Basic Reset */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: #121212;
+  background-color: #121212;
   color: #e0e0e0;
   display: flex;
-  height: 100vh;
 }
 
-.container {
+.layout {
   display: flex;
   width: 100%;
+  height: 100vh;
 }
 
 .sidebar {
-  width: 250px;
-  background: #1e1e1e;
-  padding: 2rem 1.5rem;
+  width: 230px;
+  background: #1f1f1f;
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
   height: 100vh;
   overflow-y: auto;
   border-right: 1px solid #2a2a2a;
-  position: sticky;
-  top: 0;
 }
 
-.sidebar h1 {
-  font-size: 1.8rem;
+.sidebar .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
   color: #00bcd4;
   margin-bottom: 2rem;
 }
 
-.sidebar nav a {
+.sidebar .nav a {
   display: block;
+  padding: 0.5rem 0;
   color: #ccc;
   text-decoration: none;
-  margin-bottom: 1rem;
-  padding-left: 0.5rem;
-  border-left: 4px solid transparent;
-  transition: 0.2s;
+  transition: all 0.2s;
+  font-size: 1rem;
 }
 
-.sidebar nav a:hover {
+.sidebar .nav a:hover {
   color: #00bcd4;
-  border-color: #00bcd4;
+  padding-left: 5px;
 }
 
-main {
+.content {
   flex: 1;
   padding: 2rem 3rem;
   overflow-y: auto;
 }
 
-main section {
-  margin-bottom: 3rem;
-}
-
-main h2 {
+h2 {
   color: #00bcd4;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+ul, ol {
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
-}
-
-ul {
-  margin-left: 1.5rem;
-  list-style-type: disc;
-}
-
-ol {
-  margin-left: 1.5rem;
 }
 
 pre {
   background: #1a1a1a;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow-x: auto;
+  margin-top: 1rem;
 }
 
 code {
@@ -87,15 +86,15 @@ code {
 
 img.webhook-img {
   max-width: 100%;
-  margin-top: 1rem;
   border: 1px solid #333;
-  border-radius: 8px;
+  border-radius: 6px;
+  margin-top: 1rem;
 }
 
 footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #888;
   border-top: 1px solid #2a2a2a;
   padding-top: 1rem;
-  text-align: center;
-  color: #888;
-  font-size: 0.9rem;
 }
