@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeonBans - Advanced Ban Plugin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NeonBans</h1>
+    <p>Advanced Ban, Mute, Kick, and Warning System for Minecraft Servers</p>
+    <div class="buttons">
+      <a href="https://github.com/YourUsername/NeonBans/releases/latest" target="_blank">GitHub</a>
+      <a href="https://yourcdn.com/NeonBans.jar" target="_blank" class="secondary">Direct Download</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>🔧 Features</h2>
+      <ul>
+        <li>Ban, kick, mute, warn system</li>
+        <li>Webhook support for Discord</li>
+        <li>SQLite local storage, no setup needed</li>
+        <li>Custom messages for punishments</li>
+        <li>Configurable thresholds for warnings</li>
+        <li>Simple, clean config.yml</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📥 Installation</h2>
+      <ol>
+        <li>Download the plugin</li>
+        <li>Place it in your <code>/plugins</code> folder</li>
+        <li>Restart the server</li>
+        <li>Edit the config to your liking</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>📜 Commands</h2>
+      <ul>
+        <li><code>/ban &lt;player&gt; &lt;reason&gt;</code> – Ban a player</li>
+        <li><code>/kick &lt;player&gt; &lt;reason&gt;</code> – Kick a player</li>
+        <li><code>/mute &lt;player&gt; &lt;duration&gt;</code> – Mute a player</li>
+        <li><code>/warn &lt;player&gt; &lt;reason&gt;</code> – Warn a player</li>
+        <li><code>/unban &lt;player&gt;</code> – Unban a player</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>⚙️ Example Config</h2>
+      <pre><code># NeonBans configuration
+
+broadcast-ban-messages: true
+ban-message: "&cYou are banned from this server! Reason: %reason%"
+
+webhook:
+  enabled: true
+  url: "https://discord.com/api/webhooks/your_id/your_token"
+
+messages:
+  ban: |
+    🚫 **Ban Issued**
+    **Player:** %player%
+    **Reason:** %reason%
+</code></pre>
+    </section>
+
+    <section>
+      <h2>🔑 Permissions</h2>
+      <pre><code>
+neonbans.ban - Allows banning
+neonbans.kick - Allows kicking
+neonbans.mute - Allows muting
+neonbans.warn - Allows warning
+neonbans.admin - Full access
+      </code></pre>
+    </section>
+
+    <section>
+      <h2>📬 Webhook Preview</h2>
+      <img src="https://i.imgur.com/webhook-placeholder.png" alt="Webhook Preview" class="preview">
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by NeonStudios | <a href="https://github.com/YourUsername/NeonBans">View on GitHub</a></p>
+  </footer>
+</body>
+</html>
